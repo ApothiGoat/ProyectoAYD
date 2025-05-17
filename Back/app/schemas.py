@@ -189,3 +189,4 @@ def validate_user(user_data):
         return False
     
     return True
+    

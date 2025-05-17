@@ -76,3 +76,4 @@ def register_user(user_data):
         return {'success': True, 'user_id': user_id}
     except Exception as e:
         return {'success': False, 'message': str(e)}
+        
