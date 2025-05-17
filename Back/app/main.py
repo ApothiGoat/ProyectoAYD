@@ -318,7 +318,5 @@ def get_branch_performance():
     
     return jsonify(metrics)
 
-# Iniciar aplicación si se ejecuta directamente
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
-    
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=DEBUG)
