@@ -7,8 +7,8 @@ def create_app():
     # Permitir solicitudes CORS
     CORS(app)
     
-    # Importar y registrar blueprints aquí si se desea organizar las rutas
-    # from .routes.sales import sales_bp
-    # app.register_blueprint(sales_bp)
+    # Importar y registrar las rutas directamente
+    from . import main
     
     return app
+    
